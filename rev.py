@@ -164,8 +164,6 @@ class CustomHelpFormatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawTe
 
 
 if __name__ == '__main__':
-    # todo pass rest args to decompiler
-
     p = argparse.ArgumentParser(formatter_class=CustomHelpFormatter)
     p.add_argument('file',
                    help='file to decompile. Supported extensions: %s' % supported_extensions_str)
@@ -187,6 +185,7 @@ if __name__ == '__main__':
                         'example:\n'
                         '-l ~/Android/Sdk/platforms/android-28/android.jar\n'
                         '-l ~/Android/Sdk/platforms/android-28/optional/org.apache.http.legacy.jar')
+    # todo pass rest args to decompiler
 
     options = p.parse_args()
     log.info('running with options: %s' % options)
@@ -246,8 +245,6 @@ if __name__ == '__main__':
     jar_unpacked_dir = '%s/jar_unpacked' % output_dir
     src_dir = '%s/src_%s' % (output_dir, decompiler)
 
-    # todo
-    # max_reuse = options.decompiler_only
     library_files = list(map(realpath, options.library_files))
 
     def process_jar(jar):
@@ -256,8 +253,7 @@ if __name__ == '__main__':
             decompile(decompiler, jar, src_dir, libraries=library_files)
             if ext == 'apk':
                 log.info('copying resources..')
-                copy_tree(res_dir, src_dir)#, dirs_exist_ok=True)
-                # copy_resources(file_path, src_dir)
+                copy_tree(res_dir, src_dir)
         else:
             log.info('decompilation not requested.')
 

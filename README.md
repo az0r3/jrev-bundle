@@ -1,11 +1,14 @@
 ### Android/Java reverse engineering bundle  
 
-This is a convenience bundle mainly for reverse engineering Android apps.
+This is a convenience bundle mainly for Android apps reverse engineering.  
 `$ git clone --recurse-submodules https://github.com/az0r3/jrev-bundle.git`
+
+Runs on linux, needs unzip, python3, JDK, gradle, mvn.  
 
 The repo contains:
 * 3rd-party tools (and build wrappers) for unpacking/disassembling/decompiling java-based apps.
 * `rev.py` -- a simple wrapper for running chain of tools on apk/dex/jar files.
+* `update.sh` -- update and build all tools.
 
 #### rev.py
 
