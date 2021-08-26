@@ -1,0 +1,36 @@
+[submodule "Apktool/repo"]
+	path = Apktool/repo
+	url = https://github.com/iBotPeaches/Apktool.git
+	branch = master
+[submodule "cfr/repo"]
+	path = cfr/repo
+	url = https://github.com/leibnitz27/cfr.git
+	branch = master
+[submodule "fernflower/repo"]
+	path = fernflower/repo
+	url = https://github.com/fesh0r/fernflower.git
+	branch = master
+[submodule "dex2jar/repo"]
+	path = dex2jar/repo
+	url = https://github.com/pxb1988/dex2jar.git
+	branch = 2.x
+[submodule "Krakatau/repo"]
+	path = Krakatau/repo
+	url = https://github.com/Storyyeller/Krakatau.git
+	branch = master
+[submodule "jd-cli/repo"]
+	path = jd-cli/repo
+	url = https://github.com/intoolswetrust/jd-cli.git
+	branch = master
+[submodule "procyon/repo"]
+	path = procyon/repo
+	url = https://github.com/mstrobel/procyon.git
+	branch = develop
+[submodule "smalidea/repo"]
+	path = smalidea/repo
+	url = https://github.com/JesusFreke/smalidea.git
+	branch = master
+[submodule "jadx/repo"]
+	path = jadx/repo
+	url = https://github.com/skylot/jadx.git
+	branch = master

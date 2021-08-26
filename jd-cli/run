@@ -1,0 +1,2 @@
+#!/bin/sh
+java -jar "$(dirname "$0")/repo/jd-cli/target/jd-cli.jar" "$@"

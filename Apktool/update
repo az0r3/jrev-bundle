@@ -1,0 +1,4 @@
+#!/bin/sh
+cd "$(dirname "$0")/repo" &&
+# git pull &&
+./gradlew clean build shadowJar -x test

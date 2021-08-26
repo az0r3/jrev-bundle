@@ -1,0 +1,4 @@
+#!/bin/sh
+cd repo &&
+git pull &&
+./gradlew clean jar

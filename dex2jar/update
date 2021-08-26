@@ -1,0 +1,4 @@
+#!/bin/sh
+cd "$(dirname "$0")/repo" &&
+# git pull &&
+gradle clean installDist # ./gradlew doesn't support java11

@@ -1,0 +1,2 @@
+#!/bin/sh
+"$(dirname "$0")/repo/dex-tools/build/install/dex-tools/d2j-dex2jar.sh" "$@"

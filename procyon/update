@@ -1,0 +1,5 @@
+#!/bin/sh
+cd "$(dirname "$0")/repo" &&
+# git pull &&
+gradle clean jar &&
+cp out/procyon-decompiler-* procyon.jar

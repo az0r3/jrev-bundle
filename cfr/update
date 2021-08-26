@@ -1,0 +1,5 @@
+#!/bin/sh
+cd "$(dirname "$0")/repo" &&
+# git pull &&
+mvn clean package &&
+cp target/cfr-*-SNAPSHOT.jar target/cfr-LATEST-SNAPSHOT.jar
